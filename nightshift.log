@@ -1,0 +1,7 @@
+ADJUDICATION a0 = 6.39015469669973
+si 8 atoms rattled, written
+sto 5 atoms rattled, written
+cspbi3 5 atoms rattled, written
+si GPAW max|F| = 1.7196 eV/A
+sto GPAW max|F| = 1.0709 eV/A
+cspbi3 GPAW max|F| = 0.152 eV/A
