@@ -1,0 +1,5 @@
+si rattled at 0.02 A, written
+cspbi3 rattled at 0.2 A, written
+si_v2 GPAW max|F| = 0.6327 eV/A
+cspbi3_v2 GPAW max|F| = 1.0189 eV/A
+si_check600 GPAW max|F| = 1.7192 eV/A
