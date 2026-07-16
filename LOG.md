@@ -64,3 +64,83 @@ CAVEATS: alpha bundles MACE softening + GPAW<->VASP training-target delta (Si to
 PRE-REGISTERED blind (mentor signs): alpha at OLD 0.05 A Si rattle (files exist, zero GPAW). Prediction: alpha(0.05) in [0.55, 0.70], cosine > 0.99. Amplitude-dependent alpha = structure in the softening worth reporting.
 ALPHA-AMPLITUDE PROBE SCORED: alpha(0.05A) = 0.602, cosine 0.996 - HIT both clauses. Softening has structure: worst near equilibrium (0.543 @ 0.02A -> 0.602 @ 0.05A), relaxing with amplitude; direction near-perfect throughout. Harmonic limit implies alpha <= 0.54 -> Si phonons ~26%+ soft; tension with published MACE-MP-0 phonon benchmarks flagged. Caveats: 2 amplitudes = trend not curve; different seeds (42/43) add few-% noise to slope, not to direction of drift. Phase 0 task sharpened: check Deng et al. + MACE-MP-0 paper for diamond-Si phonon numbers specifically.
 Day tally: 4 predictions scored (2 HIT incl. the halide bet's first-ever hit on filing #3, 2 informative near-MISS), one literature-verified reproduction of a 2025 npj finding + one additive halide data point, Phase 2 success metric minted (post-fine-tune alpha = 1.00 +/- 0.05).
+Comprehension check (new rule: state the finding before the mentor explains it): alpha = 0.54 stated correctly in own words - MACE pushes ~54% as hard as GPAW. Correction absorbed: it is systematic (same error every time, right direction) not frequentist (right 54% of the time) - which is exactly why it is one curable dial and not noise.
+Question logged (good one, wrong project number): "10 materials at once?" -> that is P6 (transfer test), and the answer is one target, then maybe two - each material needs its own convergence study + oracle discipline, the part that never transfers free. Ten uncalibrated oracles = confident garbage. Ten materials becomes right in Era 4, once P7's escalation rule automates the stamping - and then it is a map of alpha across chemistries, which is a paper.
+
+## P4 PHASE 0 OPENED (Jul 14) - landscape scan
+Pre-registered blind (both signatures, before reading anything):
+- Patent density on CsPbI3 stabilization: I predict CROWDED on compositional fixes (A-site/cation mixing, halide alloying) and THINNER on process/strain/interface levers.
+- I predict >=1 contradiction found between two papers on the same mechanism within the first 20 papers.
+- I predict the mechanism menu grows from v0 by >=5 new entries with numbers attached.
+- Abort trigger declared in advance: if every plausible lever is claimed AND the literature shows no open mechanism question, Phase 0 recommends re-targeting (a real, allowed outcome).
+Deliverables: WHITESPACE.md (what's tried, what's crowded, what's thin) + mechanism menu v1.
+Rule: a paper counts as read only if it yields (1) a menu entry with a number, (2) a benchmark number, (3) a contradiction, or (4) a one-line parking-lot note.
+PHASE 0, day 1 scored: WHITESPACE.md created (1.4 KB). Patent landscape mapped: exact-phrase queries give 11/43/53/118 (fuzzy gave 4,900-15,000 = noise). HEADLINE: field is small and unfenced; 6 of 11 "iodide migration" patents build interface WALLS, 3 use additives, ~18% junk. Nobody targets the intrinsic lattice barrier - the field builds walls, our instrument measures hills.
+Contradiction prediction: MISS - none found, and correctly so. The 11 patents AGREE (converging on wall-building). Catch #17 (mentor): predicted contradictions in the wrong genre - patents are written to claim, not argue. Contradictions live in PAPERS. Prediction re-filed for the literature pass, not the patent pass.
+Density-by-lever prediction (crowded on composition, thin on process/interface): PARTIAL MISS on this sample - interface is the CROWDED lever, composition thinner. Opposite of my guess, on n=11.
+
+## P4 PHASE 0 - PAPER HALF OPENED (Jul 15)
+Target question: is the intrinsic-barrier hole an OPENING (nobody could compute it pre-MLIP) or the FIELD'S WISDOM (barrier can't be moved without breaking the absorber)?
+Pre-registered blind (mentor signs):
+- I predict CsPbI3 iodide-vacancy migration barriers HAVE been computed by DFT (several papers), in the 0.2-0.5 eV range, on the UNSTRAINED lattice.
+- I predict barriers UNDER STRAIN are thin-to-absent - a handful of papers at most, and probably on MAPbI3 not CsPbI3.
+- I predict NO paper has swept barrier vs composition at MLIP scale (hundreds of candidates) for CsPbI3.
+- If all three hold, the hole is an OPENING and Phase 3 has its target. If barriers-under-strain is a crowded literature, the hole is partly the field's wisdom and we re-aim.
+Benji's call goes in before we search.
+PAPER HALF, day 1 - SCORED HARD:
+Benji: "yes, 2-5 papers" -> HIT on yes, MISS on count (mature literature, many groups).
+Mentor: "several papers, 0.2-0.5 eV, unstrained" -> HIT on range. Converged numbers: gamma-CsPbI3 0.42-0.43 eV (MD-Arrhenius + DFT-NEB + experiment agree); FAPbI3 vacancy 0.34-0.45 eV; MAPbI3 vacancy spread 0.08-0.58 eV (spread attributed to soft-lattice path-finding difficulty).
+MENTOR PREDICTIONS DEAD (2 of 4): (a) "no MLIP-scale barrier work on CsPbI3" - FALSE. arXiv:2409.16051 (Tracing Ion Migration with MLFFs) does CsPbI3 iodide defects, charge states, MLFF-vs-DFT force validation, CI-NEB comparison, AND an SOC check (SOC affects defect geometry, not forces enough to train on). That is our Phase 1 SOC study + Phase 2 force validation + Phase 3 NEB, published, in our material. (b) "no composition sweep" - PARTIAL: Chem Mater 2025 (10.1021/acs.chemmater.5c00503) does gamma-CsPbI3 barriers + dopant effects (Sn 3%: 0.42->0.43 eV = no change) via DFT-NEB + 80 ns ML-MD.
+ANSWER TO THE SHARP QUESTION: people ARE computing the intrinsic barrier. The patent hole is NOT ignorance - it is that a barrier is not a patentable ACTION. Reason (b) confirmed over (d).
+ALSO: Science Advances "Multiple B-site doping suppresses ion migration" - the working lever is COMPOSITION (Eu-Yb-Ca in MAPbI3), i.e. the crowded room.
+PHASE 0 JUST PAID FOR ITSELF: 3 days of reading vs 4 months reproducing a 2024 paper.
+NEXT: read arXiv:2409.16051 in full - find what they did NOT do (strain? anharmonic regime? composition breadth?). Re-aim from there, honestly.
+PAPER HALF - arXiv:2409.16051 read in full (Tyagi/Pols/Brocks/Tao, Eindhoven).
+THEY DID OUR PHASES 1-3: MLFF for 6 charge states of I defects in CsPbI3, DFT force validation (R2>0.94, MAE<=55 meV/A), CI-NEB DFT-vs-MLFF, then 2ns x5 runs x5 temps on 216-unit supercells -> Arrhenius. Barriers 0.16-0.30 eV by charge state; V_I- immobile. SOC checked: affects defect geometry, not forces.
+BENJI'S CALL "the target moved" - CORRECT.
+THE CONTRADICTION FOUND (4 days after the prediction, in papers not patents): NEB vs MD disagree by 2-3x. Their V_I+: NEB 0.44 eV vs MD 0.16+/-0.03 eV. Field's TST/NEB spread for MAPbI3 vacancy: 0.08 / 0.26 / 0.32 / 0.58 eV = 7x, same defect. Their stated cause: NEB unsuitable for soft materials (path-sampling).
+METHOD KILLED: our Phase 3 spec ("NEB barriers + DFT stamps") would have produced a number the field already knows is systematically wrong. Phase 3 must be MD-based, not NEB-based.
+THE SURVIVING OPENING (re-aim): they validate forces with ABSOLUTE metrics (MAE). Nobody decomposes MLFF force error into SCALE vs DIRECTION on soft halides at migration-relevant displacements. Our alpha does exactly that. Systematic PES softening (Deng 2025) would bias barriers LOW - and their MD barriers ARE 2-3x lower than NEB. Is that soft-material physics or MLFF softening? UNANSWERED IN THE LITERATURE.
+NEW P4 QUESTION: "How much of the computed barrier is the model's softening?" Cheap, ours, both answers publishable.
+PATENT LESSON: patents need a demonstrable ACTION. A barrier is a property - computable by dozens, patentable by none. Any invention of ours must terminate in an action (powder test / recipe / treatment).
+SKILL LOGGED (how to find the gold sentence): read for the APOLOGY, not the claim. Pattern = author admits their two instruments disagree, offers a plausible explanation, never tests it. Locations: Discussion section, the "however/note that/the exception is" sentences, the limitations paragraph. Tao paper's tell: "NEB values can easily be off by a factor of two... NEB might be less suitable for soft materials." Admitted disagreement + untested explanation = hole with a number attached.
+THE 3 LEVERS (entire 41-patent landscape): (1) additives - extra molecule in the mix; (2) processing - solvent/anneal/growth route; (3) interface layers - buffer/coating/passivation next to the perovskite. All three are ACTIONS PERFORMED BY HANDS.
+"Can I file 20 patents wholesale?" NO: patent needs novel AND non-obvious AND ENABLED. Additive #47 dies on obviousness, and we cannot enable it - no lab, and materials = "unpredictable art" requiring experimental data behind composition claims. Our only path: compute what they cannot see -> ONE prediction -> $5k physical confirmation -> patent the confirmed ACTION. One patent with a receipt > twenty without.
+TODAY'S FIND IS PAPER MATERIAL, NOT PATENT MATERIAL: a 7x disagreement in the field's central number + an untested explanation. Nobody patents "your instrument is biased" - everybody cites it. Matches doctrine: open methods, owned matter.
+
+## P4 PHASE 3 RE-SPECCED (Jul 15) - the barrier-softening audit
+OLD SPEC (dead): NEB barriers + DFT stamps. Killed by Phase 0 - Tao et al. show NEB is 2-3x off vs MD in soft halides; we'd have computed a number the field knows is wrong.
+NEW QUESTION: how much of a computed migration barrier is PHYSICS and how much is MLFF softening (Deng 2025 / our alpha)?
+THE GAP: Tao V_I+ = NEB 0.44 eV vs MD 0.16+/-0.03 eV (2.75x). They blame soft-material path-sampling. They never checked model softening. Nobody in this literature decomposes force error into scale vs direction. We do.
+LEGS: (1) alpha along the migration path - measure alpha at saddle-point geometries, not just rattled crystals. (2) barrier-vs-barrier: our DFT vs MACE on the same path; does the gap match what alpha predicts? (3) verdict: real physics vs model bias.
+PRE-REGISTERED BLIND (both signatures, before any code): alpha DECREASES at the saddle point vs equilibrium (saddle is furthest from near-equilibrium training data) -> barriers systematically underestimated by a computable amount. Quantitative: alpha(saddle) < alpha(rattled 0.2A) for CsPbI3, i.e. < 0.88.
+COST: weeks not months. Handful of paths, few dozen DFT single-points. No 1000-trajectory MD, no composition sweep.
+PHASE 1 SHRINKS: need defect structures + DFT forces on migration configs. Polymorph (black vs yellow) study drops off the critical path - PARKED.
+HONEST RISK: this is an AUDIT -> paper + benchmark, NOT a patent. Patent path (one prediction -> $5k powder test) is downstream, if at all. Doctrine-consistent: the audit IS the moat.
+READING LIST (Phase 3-serving, capped at 3): (1) Tao SI - migration path geometries + per-charge-state barrier tables = our Phase 3 input + comparison target. (2) Deng 2025 softening paper - what it claims about migration barriers; check diamond-Si phonon numbers (open tension in log). (3) Chem Mater gamma-CsPbI3 dopant paper - WHY did 3% Sn move the barrier only 0.42->0.43? That is the field answering "why not just raise the barrier."
+PATENT REALITY LOGGED: the unit is ONE with a receipt, not "a few." Path unchanged: compute what they can't see -> one testable prediction -> ~$5k powder + XRD -> provisional on the ACTION. That is Phase 4, 4-6 months out, contingent on the audit being predictive. Faster = someone selling filing fees.
+PAPER PATH IS THE LIVE ONE: alpha audit (scale-vs-direction decomposition of MLFF force error, 3 materials + saddle-point prediction) is months not years, and it is what makes a wet lab answer an email later.
+"MEANWHILE" ANSWER: nothing for 3 weeks. Then P5 (database audit, laptop-grade) is the ONLY sanctioned parallel work. Everything else is the widening reflex - 14 ledger entries document where it goes.
+
+## P4 PHASE 1 OPENED (Jul 15) - shrunk spec: defect structures for the softening audit
+Building: 2x2x2 cubic CsPbI3 supercell (40 atoms) with one iodide vacancy = the defect the field argues about.
+Pre-registered blind (mentor signs, before any run): after relaxing the vacancy structure, the neighboring Pb atoms move APART (they lose the shared iodine bridge that held them). Prediction: nearest Pb-Pb distance INCREASES by >0.1 A vs the pristine lattice.
+Note: Tao et al. used 2x2x2 for training, 6x6x6 for production MD. We start at 2x2x2 - if the DFT run is affordable we keep it, if the defect talks to its own periodic image we go bigger. That check comes later.
+
+## P4 PHASE 1 - VACANCY RELAXATION (Jul 16)
+Structure: 2x2x2 cubic CsPbI3 supercell, 40 atoms -> 39 with one iodide vacancy. Kill-check passed (Cs8Pb8I24 -> Cs8Pb8I23).
+Run: GPAW PW(600), k 2x2x2 (equivalent density to 6x6x6 on the 1x cell), atoms relax / cell fixed. 25 BFGS steps, 1h44m, dE = -0.098 eV, final fmax 0.018 < 0.02 target.
+PREDICTION (mentor signed): Pb-Pb around the vacancy moves APART by >0.1 A. RESULT: 6.3867 vs 6.390 pristine = moved TOGETHER by 0.003 A. MISS on DIRECTION and 30x on magnitude.
+PHYSICS: matches Tao et al. - they report Pb-Pb SHORTENING around the vacancy (the two Pb2+ bond more tightly across the gap as the vacancy captures electrons), which is why V_I- is immobile. Our intuition ("remove the bridge, the ends fall apart") is exactly backwards. Counterintuitive result reproduced on our own machine.
+CONFOUND CHECK (did it actually relax?): PASSED - 25 steps, real energy drop, not a stuck structure.
+THE DIARY IS THE FINDING: fmax started 0.090, JUMPED to 0.331 at step 2 (4x worse), thrashed (0.14/0.19/0.24) for a dozen steps; energy rose at steps 2, 8, 11, 18. A smooth relaxation slides downhill. This one wandered a bumpy landscape.
+=> SOFTNESS, FELT FROM THE INSIDE. Many near-degenerate positions for I around the vacancy = no strong opinion about where atoms sit. Same anharmonicity as the 4x-displacement/9.5x-force result. THIS IS EXACTLY WHY NEB STRUGGLES HERE (Tao's explanation, now observed in our own optimizer log).
+
+## SADDLE ALPHA MEASURED (Jul 16) - first data on the new Phase 3 question
+Crude midpoint saddle (I hops 4.42 A into the vacancy, straight-line midpoint). GPAW max|F| = 8.51 eV/A, RMS_F 1.49 - violent geometry, far outside MACE training distribution. Registered in advance as a directional probe, not the final measurement.
+PREDICTION alpha(saddle) < 0.88: HIT - alpha = 0.832, cosine = 1.000, rel% = 17.0.
+Alpha map now spans 2 orders of magnitude of force: Si 0.543 (0.02A) / 0.602 (0.05A) | STO 0.951 (0.05A) | CsPbI3 0.882 (0.2A rattle, RMS_F 0.46) -> 0.832 (saddle, RMS_F 1.49). Softening deepens with severity but GENTLY - no cliff.
+ROBUSTNESS RESULT: cosine = 1.000 at a geometry the model has never seen. MACE points exactly right even when jammed. Interpretation A (catastrophic collapse at saddles) is DEAD.
+THE SERVICE TO THE FIELD (mentor hypothesis MISS, and it matters): ~17% softening cannot explain Tao's 2.75x NEB-vs-MD gap (0.44 vs 0.16 eV). Model bias is largely CLEARED as the culprit; their soft-material path-sampling explanation gains support. We checked what nobody checked, and the answer exonerates the tool.
+CAVEAT: crude midpoint, not a relaxed transition state. Real saddle = proper path optimization.
+NEXT: does alpha hold at a RELAXED saddle (physically meaningful, forces near zero along the path)? That is the publishable version.
