@@ -1,0 +1,10 @@
+image 0: E = -110.2926 eV
+image 1: E = -110.4648 eV
+image 2: E = -110.3493 eV
+image 3: E = -110.1718 eV
+image 4: E = -110.3611 eV
+image 5: E = -110.4714 eV
+image 6: E = -110.2973 eV
+GPAW energies on MACE path (eV): [ 0.    -0.172 -0.057  0.121 -0.068 -0.179 -0.005]
+GPAW BARRIER = 0.121 eV   (peak at image 3 )
+MACE BARRIER = 0.149 eV (peak at image 3)

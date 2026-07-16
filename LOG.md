@@ -144,3 +144,35 @@ ROBUSTNESS RESULT: cosine = 1.000 at a geometry the model has never seen. MACE p
 THE SERVICE TO THE FIELD (mentor hypothesis MISS, and it matters): ~17% softening cannot explain Tao's 2.75x NEB-vs-MD gap (0.44 vs 0.16 eV). Model bias is largely CLEARED as the culprit; their soft-material path-sampling explanation gains support. We checked what nobody checked, and the answer exonerates the tool.
 CAVEAT: crude midpoint, not a relaxed transition state. Real saddle = proper path optimization.
 NEXT: does alpha hold at a RELAXED saddle (physically meaningful, forces near zero along the path)? That is the publishable version.
+
+## MACE NEB - path found (Jul 16), after 3 failed attempts
+Catch #19 (mentor): teleported unrelaxed endpoint -> meaningless path (peak at endpoint).
+Catch #20/#21 (mentor): endpoints relaxed in DIFFERENT engines (GPAW init, MACE final) -> 53 meV mismatch waved through as "marginal" -> NEB diverged to step 2243, fmax 1.05, E +8.5 eV off. Fix: relax BOTH endpoints in MACE's own landscape -> mismatch collapses 53 meV -> 0.5 meV (100x). RECEIPT FOR THE RULE: "never compare energies across codes" cost 8 hours of GPAW + a 2243-step divergence.
+FINAL PATH: energies [0, -0.207, -0.039, +0.149, -0.057, -0.216, -0.000]. Endpoints symmetric to 0.0005 eV. Peak at image 3 (dead center) = correct saddle position.
+PATH DIAGNOSTIC (kill-check): hopper distance to hole marches 4.43/4.05/3.40/2.51/1.48/0.63/0.12 A - MONOTONIC, no backtracking. Other atoms move 0.25-0.89 A = neighbors making way, not band collapse. Sideways-collapse hypothesis DEAD.
+THE W IS REAL: intermediate images sit BELOW both endpoints (-0.21, -0.22). The floppy lattice finds better arrangements mid-hop than at rest. This is the soft/anharmonic landscape (measured all week: 4x displacement -> 9.5x force) now visible in a migration path - and it is exactly the pathology Tao invokes for why NEB struggles here.
+BARRIER UNQUOTABLE: 0.149 eV is height above a fake baseline; true climb from the -0.216 dip is ~0.37 eV. 7 images / 4.4 A is coarse; 0.89 A neighbor motion suggests under-resolution. Mentor's "MACE undershoots ~0.4 eV" prediction: UNSCOREABLE, not hit. Not laundering a W into a win.
+FOR THE AUDIT: image 3 is a genuine, physically-reached mid-hop geometry at the top of the local climb = a legitimate place to measure alpha.
+
+## REAL SADDLE ALPHA - UNMEASURABLE (Jul 16). Prediction UNSCOREABLE.
+GPAW at NEB image 3: max|F| = 0.160, RMS|F| = 0.0422 eV/A - 35x gentler than the crude midpoint (8.51/1.49). Tiny forces = properly balanced saddle = the path is real. Good news.
+Result: alpha = 0.083, cosine = 0.276, rel% = 96.2. REJECTED as physics.
+WHY: (1) cosine 0.28 is impossible - it has never gone below 0.996 in any measurement; models do not forget direction. At a saddle both engines' forces are near zero and what remains is mostly noise (GPAW convergence noise ~0.001-0.01 vs signal 0.042). Subtracting two whispers. (2) CATCH #22 (mentor, conceptual): the saddle IS MACE's own stationary point - MACE optimized the band until its own forces were ~0.04. Measuring alpha at a model's own minimum is a tautology, not a measurement.
+THE REAL FINDING: saddle geometries have vanishing forces => FORCE-BASED ALPHA CANNOT PROBE SADDLES, EVER. The audit premise needs re-aiming: you cannot measure a scale factor where there is no scale.
+RE-AIM: the saddle probe must be ENERGY-based, not force-based - compute the same barrier with both engines, compare heights. Different experiment, and the one that always mattered.
+Registered caveat fired as written ("if alpha comes back wild, suspect noise before physics") - the one thing that went right.
+
+## ENERGY-BASED BARRIER AUDIT (specced Jul 16) - the re-aimed Phase 3
+Method: GPAW single-points on all 7 MACE NEB images. Same geometries, both engines, compare barrier heights. ~10 min per image (proven), ~70 min total, background.
+Claim scope (registered): this measures whether MACE misjudges the height of the hill IT found - not whether MACE's barrier is the true barrier (GPAW would find its own path). Narrower, and the right claim for a softening audit.
+PRE-REGISTERED BLIND (mentor signs): GPAW's barrier on MACE's path is HIGHER than MACE's own. Reasoning: PES softening (Deng 2025) = underpredicted curvature = shallower hills. Quantitative: GPAW barrier > MACE barrier by >10%. If they match within noise, softening does NOT reach barrier heights and my whole Phase 3 premise dies - which would itself be the finding (the tool is cleared, twice over).
+Benji's call goes in before we run.
+BENJI'S CALL (blind, opposing the mentor): GPAW barrier comes out LOWER than MACE's 0.149 eV. Mentor: HIGHER by >10%. Direct opposition, both signed before the run.
+
+## BARRIER AUDIT SCORED (Jul 16) - BENJI WINS, and the result inverts the hypothesis
+GPAW on MACE's path: [0, -0.172, -0.057, +0.121, -0.068, -0.179, -0.005]. BARRIER = 0.121 eV, peak image 3.
+MACE on its own path:  [0, -0.207, -0.039, +0.149, -0.057, -0.216,  0.000]. BARRIER = 0.149 eV, peak image 3.
+BETS: Benji "GPAW lower" = HIT. Mentor "GPAW higher by >10%" = MISS, wrong direction. GPAW is 19% LOWER (MACE overpredicts by 23%). Benji now 3-for-4 on recent blind calls.
+THE INVERSION: MACE's hill is TOO TALL, not too short. Softening (Deng 2025) predicts underpredicted curvature = shallower hills = LOWER barriers. We got the opposite sign. Second independent strike against "softening explains the field's barrier problems" (first: alpha too mild to explain Tao's 2.75x gap).
+SHAPE AGREEMENT (the framed result): both engines reproduce the same W - same peak position (image 3), same dips at 1 and 5, same magnitudes within ~20%. The engines agree on the LANDSCAPE SHAPE and disagree only on AMPLITUDE, with MACE exaggerating every feature ~20%. THE W IS REAL PHYSICS, professor-confirmed: the soft lattice genuinely finds better arrangements mid-hop than at rest.
+CAVEATS: 7 images is coarse; this is MACE's path not GPAW's; single measurement, no error bar. The finding is a DIRECTION, not a number.
