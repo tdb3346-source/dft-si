@@ -227,3 +227,35 @@ WHAT IS SOLID: relaxation dropped the barrier 0.094 -> 0.059 = 37% reduction. Th
 DECOMPOSITION CORRECTED: 0.108 (neutral) -> 0.094 (charged, frozen) -> 0.059 (charged, relaxed). Electronic 0.014 eV, structural 0.035 eV => ~29% electronic / ~71% structural. Yesterday's "87/13" was too aggressive; today's data corrects the mentor's own headline. Benji's instinct - relaxation would not do the whole job - was directionally right.
 FULL LADDER NOW: MACE 0.152 | GPAW neutral 0.108 | GPAW V_I+ frozen 0.094 | GPAW V_I+ relaxed 0.059. MACE's error vs the physically relevant barrier (relaxed V_I+) is +158%.
 CAVEAT: unconverged peak; neutral-optimized path as the starting geometry; uniform background charge, no finite-size correction.
+
+## REPLICATION + PHASE 2 DATA (Jul 18) - A feeds B
+Rule adopted (Benji): do it right and make something useful. Standing #1.
+Plan: 3 vacancy sites, same pipeline. Replication gives an error bar (turns a measurement into a claim). Every DFT point becomes Phase 2 fine-tuning data. A IS B's input.
+PRE-REGISTERED BLIND: Benji ~41% again. Mentor 35-50%, tight. Both betting the error is SYSTEMATIC and site-independent.
+Also correcting the mentor's own overreach: "one phase per day" does not close arithmetically - Phase 2 needs a few hundred DFT configs at 10-40 min each = 50+ hours of compute. Tao used a cluster and months. What IS achievable: parallel background jobs instead of serial waiting.
+Catch #24 (mentor, caught before compute): proposed 3 vacancy sites as a "replication" test - but in a perfect cubic cell all 24 iodine sites are SYMMETRY-EQUIVALENT. It would have measured numerical noise, not site-dependence. Three days of compute to learn my own arithmetic. Benji's call: "a is not doing useful work" - correct, and the reason is symmetry.
+RE-AIMED to strain: 1-2% strain BREAKS the cubic symmetry, creating genuinely inequivalent iodine sites. Same cost, tests what we actually bet on, and connects to the strain-release-layer patent (the best mechanism find in the Phase 0 landscape: thermal-expansion mismatch -> lattice distortion -> defect formation -> accelerated black-to-yellow transformation; T90=1800h, 20.1% PCE).
+
+## STRAIN RESULTS (Jul 18) - asymmetric, and the gate did the work
+tens2 (+2% along c): MACE energies [0, -0.114, -0.194, -0.093, 0.050, 0.112, 0.054, -0.087, -0.168, -0.140, -0.043]. BARRIER = 0.112 eV at image 5. Unstrained MACE was 0.152 -> tension LOWERS the barrier 26% in MACE's view. Endpoint tilt -0.043 eV (strain broke exact equivalence, as expected).
+comp2 (-2% along c): structure check PASSED (3.187 A, no collision) but ENDPOINT GATE FAILED: diff = -0.514 eV. Not a hop - a slide to a much better structure. Compression makes the two iodine sites GENUINELY INEQUIVALENT by half an eV. 12x the tension tilt.
+=> STRAIN IS ASYMMETRIC: stretching preserves near-equivalence and gives a clean barrier; squeezing destroys it. Connects directly to the strain-release-layer patent's mechanism claim (thermal-expansion mismatch -> lattice distortion -> defect formation).
+TWO READS TO SEPARATE: (a) compression genuinely creates a strong site preference = physics; (b) the specific iodine I deleted happens to land somewhere special under compression = artifact of atom choice. Test: delete a DIFFERENT iodine in the compressed cell, see if the asymmetry persists. Cheap.
+DISCRIMINATING TEST (Jul 18): three different iodines in the -2% compressed cell. Endpoint diffs: pick 4 = -0.0769, pick 8 = -0.0769, pick 12 = -0.5140 eV.
+VERDICT: PHYSICS, not artifact. Two picks IDENTICAL to 4 decimals (symmetry signature), one 7x worse. Compression SPLITS the 24 equivalent iodine sites into CLASSES: bridges along the strained axis vs bridges perpendicular to it. Within-class hop asymmetry = 0.077 eV; between-class = 0.514 eV.
+MECHANISTIC CONTENT: strain does not merely perturb - it creates energetically distinct iodine environments, with the strained-direction sites dramatically less stable. That is a source/sink structure for migration = exactly the strain-release patent's degradation claim, made concrete from first principles.
+CONSEQUENCE: picks 4/8 are measurable (small tilt, not a slide). Compressed barrier can be computed on a within-class hop.
+comp4 (-2%, pick 4) NEB: BROKEN. Energies [0, -0.301, -0.586, -0.439, -0.353, -0.445, -0.292, -0.540, -0.346, -0.592, -0.077] - every image BELOW image 0, peak at image 0, wells to -0.59 eV. No hill; a slide off a ledge. Endpoint diff never printed - gate never fired.
+DIAGNOSIS: the -2% compressed lattice is not at its minimum in MACE's landscape. The 200-step relaxation cap stopped early; NEB images then discover structures 0.6 eV better than the "relaxed" endpoint. Compression likely triggers a real reorganization (flirting with the known black->yellow instability).
+DECISION: compression PARKED. Getting a compressed barrier requires first characterizing what the compressed lattice does (distortion? phase change? true minimum?) - a research project, not a control variable. We came to test site-independence of MACE's +41%, not to map strain-induced phase behavior.
+KEPT: tension (+2%) gives a clean converged path, MACE 0.112 vs unstrained 0.152 = one genuinely different environment where the error IS measurable. Compression finding stands alone: strain splits iodine sites into classes (within-class 0.077, between-class 0.514 eV) and at -2% the lattice stops supporting a simple hop.
+
+## TENSION AUDIT SCORED (Jul 18) - BOTH MISS, and it breaks the clean story
+GPAW tension (+2%): [0, 0.024, 0.092, 0.050]. BARRIER = 0.092 eV, peak image 5.
+MACE tension = 0.112 eV. OVERPREDICTION = 21.2%.
+BETS: Benji ~41%, Mentor 35-50% tight. BOTH MISS. It is HALF the unstrained value.
+THE FINDING (kills our shared hypothesis): MACE's barrier error is ENVIRONMENT-DEPENDENT, not a fixed systematic bias. 2% tension cuts the overprediction from 41% to 21%.
+MECHANISM VISIBLE IN THE NUMBERS: both barriers drop under tension (GPAW 0.108 -> 0.092 = -15%; MACE 0.152 -> 0.112 = -26%). MACE is OVER-SENSITIVE to strain - it exaggerates how much stretching helps.
+CONSEQUENCE FOR PHASE 2: fine-tuning on unstrained configs would teach the model to correct a 41% error that does not exist under strain. Fix one environment, break another. Practical finding for anyone fine-tuning these models - and the opposite of the encouraging result we wanted.
+CAVEATS: 2 data points is a line not a trend; tension path had an endpoint tilt (-0.043 eV) the unstrained one lacked; one strain magnitude, one direction. Direction unambiguous, size (half) far outside noise.
+FULL TABLE: unstrained GPAW 0.108 / MACE 0.152 (+41%) | tension +2% GPAW 0.092 / MACE 0.112 (+21%) | charged relaxed GPAW 0.059 (unconverged) | compression -2% = lattice unstable, parked.

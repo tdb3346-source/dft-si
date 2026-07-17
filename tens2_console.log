@@ -1,0 +1,9 @@
+image 0 E = -110.2168
+image 4 E = -110.1925
+image 5 E = -110.1244
+image 6 E = -110.1667
+GPAW rel energies tension: [(0, np.float64(0.0)), (4, np.float64(0.024)), (5, np.float64(0.092)), (6, np.float64(0.05))]
+GPAW BARRIER tension = 0.092 eV
+MACE BARRIER tension = 0.112 eV
+MACE overpredicts by 21.2 percent
+unstrained reference: GPAW 0.108, MACE 0.152, plus 41 percent
