@@ -1,0 +1,7 @@
+image 0: E = -110.2926 eV
+image 4: E = -110.2346 eV
+image 5: E = -110.1845 eV
+image 6: E = -110.2365 eV
+GPAW rel energies on MACE-11 path: [(0, np.float64(0.0)), (4, np.float64(0.058)), (5, np.float64(0.108)), (6, np.float64(0.056))]
+GPAW BARRIER (on MACE-11 path) = 0.108 eV
+MACE-11 BARRIER = 0.152 eV   | prior round: GPAW 0.121 vs MACE 0.149 (MACE +23%)

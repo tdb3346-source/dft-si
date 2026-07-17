@@ -176,3 +176,19 @@ BETS: Benji "GPAW lower" = HIT. Mentor "GPAW higher by >10%" = MISS, wrong direc
 THE INVERSION: MACE's hill is TOO TALL, not too short. Softening (Deng 2025) predicts underpredicted curvature = shallower hills = LOWER barriers. We got the opposite sign. Second independent strike against "softening explains the field's barrier problems" (first: alpha too mild to explain Tao's 2.75x gap).
 SHAPE AGREEMENT (the framed result): both engines reproduce the same W - same peak position (image 3), same dips at 1 and 5, same magnitudes within ~20%. The engines agree on the LANDSCAPE SHAPE and disagree only on AMPLITUDE, with MACE exaggerating every feature ~20%. THE W IS REAL PHYSICS, professor-confirmed: the soft lattice genuinely finds better arrangements mid-hop than at rest.
 CAVEATS: 7 images is coarse; this is MACE's path not GPAW's; single measurement, no error bar. The finding is a DIRECTION, not a number.
+
+## NEXT (queued, not run): barrier convergence check
+Question: is MACE's +23% real, or an artifact of 7 coarse images across a 4.4 A hop?
+Method: rerun MACE NEB with 11 images, same endpoints, then GPAW single-points on the new peak + neighbors. Cost: MACE minutes, GPAW ~30 min for 3 images.
+PRE-REGISTERED BLIND: the gap SURVIVES - MACE stays higher than GPAW by 15-30% with 11 images. Reasoning: both engines drew the same W with the same peak position, so the shape is converged enough; the amplitude difference is the model, not the resolution.
+Benji's call goes in before the run.
+Benji's call (blind, Jul 17): gap SURVIVES - agrees with mentor. Both exposed if it collapses.
+
+## CONVERGENCE CHECK SCORED (Jul 17) - BOTH HIT, gap GREW
+MACE-11: barrier 0.152 eV, peak image 5 of 10 (dead center). MACE-7 was 0.149 at image 3 of 6. Barrier moved 3 meV (2%) for 4 extra images => CONVERGED. The 0.15 eV barrier is NOT a resolution artifact.
+W resolved properly at 11 images: [0, -0.10, -0.18, -0.05, +0.10, +0.15, +0.09, -0.07, -0.19, -0.13, 0]. Symmetric, two wells at images 2 and 8, single central peak.
+GPAW on MACE-11 path (images 0,4,5,6): [0, 0.058, 0.108, 0.056]. BARRIER = 0.108 eV, peak at image 5 - same position as MACE.
+BETS: both predicted "survives, 15-30%". HIT on direction; magnitude OVERSHOT the band - MACE is +41% (0.152 vs 0.108), up from +23% at 7 images. Better resolution, BIGGER gap.
+FINDING (two independent resolutions, effect strengthening): MACE-MP OVERPREDICTS the CsPbI3 iodide migration barrier by ~40% on identical geometries. Engines agree on WHERE the hill is; disagree on HOW TALL by 41%.
+THIRD STRIKE against "softening explains the field's barrier problems": (1) alpha too mild to explain Tao's 2.75x gap; (2) sign inverted at 7 images; (3) sign inverted harder at 11. Softening predicts SHALLOWER hills. We measure TALLER.
+CAVEATS: MACE's path not GPAW's; one defect, one charge state; no error bar; 4 points around the peak. Robust DIRECTION, firming magnitude, not yet a publishable number.
