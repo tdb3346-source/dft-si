@@ -1,0 +1,5 @@
+endpoint relaxed (charge +1): E = -113.8169
+peak relaxed (charge +1): E = -113.7577
+RELAXED V_I+ BARRIER = 0.059 eV
+compare: frozen V_I+ 0.094 | frozen V_I0 0.108 | MACE 0.152
+Tao needs ~<=0.06 to explain 10x rate vs neutral

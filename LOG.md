@@ -212,3 +212,18 @@ RESOLUTION = the pre-registered caveat: we froze the geometry. Tao's mechanism i
 => DECOMPOSITION (nobody has published this): the charge effect on migration barriers is ~87% STRUCTURAL, ~13% ELECTRONIC. Falsifiable, and it came from a limitation declared BEFORE the run.
 THE REFRAME: MACE 0.152 | GPAW neutral 0.108 | GPAW charged 0.094. MACE's error (+41% over neutral) is 3x LARGER than the entire charge effect (13%). The field's leading worry for this quantity - get the charge state right - is dwarfed by a tool error nobody is measuring.
 CAVEATS: neutral-optimized path; uniform background charge (finite-size corrections not applied); single defect; no error bars.
+
+## RELAXED CHARGED VACANCY (Jul 18) - direct test of the 87/13 decomposition
+Question: does letting the geometry relax under charge recover Tao's order-of-magnitude rate difference?
+PRE-REGISTERED BLIND, OPPOSING: Mentor - YES, barrier drops below 0.06 eV (structural relaxation is the missing 87%). Benji - NO, relaxation does not do it. If Benji is right, yesterday's 87/13 headline claim is FALSE and dies by his call.
+Method: relax the vacancy endpoint AND the peak image (image 5) with GPAW at charge +1, atoms free / cell fixed. Barrier = E(relaxed peak) - E(relaxed endpoint), both charged.
+Caveat registered: relaxing the saddle can slide it off the path (a saddle is a maximum along the path, minimum perpendicular to it). If the peak relaxes downhill into a well, that is a different failure and we say so.
+
+## RELAXED CHARGED VACANCY SCORED (Jul 18) - a HIT I am not claiming
+RELAXED V_I+ BARRIER = 0.059 eV. Endpoint relaxed -113.8169 (0.047 eV of relaxation); peak relaxed -113.7577 (0.076 eV).
+BETS: Mentor "drops below 0.06" = technically HIT by 0.001 eV. Benji "no" = wrong on direction.
+VERDICT REFUSED: the peak relaxation NEVER CONVERGED - stalled at fmax 0.11-0.20 vs 0.03 target, hit the 60-step cap, last steps thrashed 0.110/0.107/0.204. A number landing 1 meV inside a band on an unconverged optimizer is a coin flip with a decimal point. Claiming this HIT would be reward hacking. Ten more steps could put it anywhere in 0.05-0.07.
+WHAT IS SOLID: relaxation dropped the barrier 0.094 -> 0.059 = 37% reduction. The structural effect is real and large. Direction robust; the boundary crossing is not.
+DECOMPOSITION CORRECTED: 0.108 (neutral) -> 0.094 (charged, frozen) -> 0.059 (charged, relaxed). Electronic 0.014 eV, structural 0.035 eV => ~29% electronic / ~71% structural. Yesterday's "87/13" was too aggressive; today's data corrects the mentor's own headline. Benji's instinct - relaxation would not do the whole job - was directionally right.
+FULL LADDER NOW: MACE 0.152 | GPAW neutral 0.108 | GPAW V_I+ frozen 0.094 | GPAW V_I+ relaxed 0.059. MACE's error vs the physically relevant barrier (relaxed V_I+) is +158%.
+CAVEAT: unconverged peak; neutral-optimized path as the starting geometry; uniform background charge, no finite-size correction.
