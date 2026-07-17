@@ -1,0 +1,7 @@
+image 0 (charge +1): E = -113.7700 eV
+image 4 (charge +1): E = -113.7181 eV
+image 5 (charge +1): E = -113.6762 eV
+image 6 (charge +1): E = -113.7276 eV
+GPAW +1 rel energies: [(0, np.float64(0.0)), (4, np.float64(0.052)), (5, np.float64(0.094)), (6, np.float64(0.042))]
+V_I+ BARRIER (on neutral path) = 0.094 eV
+compare: neutral V_I0 barrier = 0.108 eV | MACE (neutral only) = 0.152 eV
