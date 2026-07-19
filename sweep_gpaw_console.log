@@ -1,0 +1,9 @@
+s067 image 0: E = -110.2791 eV
+s067 image 5: E = -110.1762 eV
+s067: GPAW BARRIER = 0.103 eV
+s067: MACE overpredicts by 37.0 percent
+s133 image 0: E = -110.2539 eV
+s133 image 5: E = -110.1596 eV
+s133: GPAW BARRIER = 0.094 eV
+s133: MACE overpredicts by 37.9 percent
+reference: 0% GPAW 0.108 MACE 0.152 = +41% | 2% GPAW 0.092 MACE 0.112 = +21%

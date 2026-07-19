@@ -1,0 +1,5 @@
+Br image 0: E = -123.9276 eV
+Br image 5: E = -123.8020 eV
+CsPbBr3 GPAW BARRIER = 0.126 eV
+CsPbBr3 MACE = 0.139 eV -> overpredicts by 10.6 percent
+compare CsPbI3 unstrained: GPAW 0.108, MACE 0.152, +41%

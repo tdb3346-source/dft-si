@@ -259,3 +259,46 @@ MECHANISM VISIBLE IN THE NUMBERS: both barriers drop under tension (GPAW 0.108 -
 CONSEQUENCE FOR PHASE 2: fine-tuning on unstrained configs would teach the model to correct a 41% error that does not exist under strain. Fix one environment, break another. Practical finding for anyone fine-tuning these models - and the opposite of the encouraging result we wanted.
 CAVEATS: 2 data points is a line not a trend; tension path had an endpoint tilt (-0.043 eV) the unstrained one lacked; one strain magnitude, one direction. Direction unambiguous, size (half) far outside noise.
 FULL TABLE: unstrained GPAW 0.108 / MACE 0.152 (+41%) | tension +2% GPAW 0.092 / MACE 0.112 (+21%) | charged relaxed GPAW 0.059 (unconverged) | compression -2% = lattice unstable, parked.
+
+## STRAIN REPRESENTATION GATE (Jul 18) - Benji's design, Benji leading
+Reframe (Benji, unprompted): this is NOT a barrier experiment, it is a representation/domain-coverage gate before spending compute on barriers. Mentor had collapsed two questions; Benji separated them.
+Design: 9 tensile points 0 to +2% in 0.25% steps. Vacancy cell. Fractional coords FIXED, single-points only (removes optimizer as confound). Identical GPAW settings throughout. Metrics: signed energy error meV/atom, force RMSE, max force error, per-atom error localization. Percentages SECONDARY only (scale-confound lesson applied unprompted).
+Safeguards added by Benji: (1) absolute GPAW energy vs the 0% structure, not percentage; (2) per-atom force-error patterns, because smooth aggregate RMSE can hide one iodine going catastrophically wrong.
+BENJI'S BLIND PREDICTION: energy error smooth, nonlinear improvement toward +2%. Force RMSE noisier but broadly smooth. Largest errors concentrated around the defect environment, not uniform.
+DECISION RULE, WRITTEN BEFORE DATA: smooth energy + force -> proceed to 4-strain barrier test (0, 0.67, 1.33, 2.0%). Smooth energy but jagged/local catastrophic force errors -> fine-tuning might work but MLIP unsafe for NEB/MD. Jagged both, with clean SCF -> stop barrier work, redesign training/domain strategy. Sudden jump WITH structural/SCF change -> diagnose the calculation first, not the model. Clean only because averaged -> does not count as passing.
+
+## STRAIN GATE: PASSED (Jul 18) - Benji's design, and it found something neither of us predicted
+ENERGY: smooth, monotonic, nonlinear. Errors 9.5/19.2/29.2/39.6/50.7/62.1/73.8/85.9 meV. Consecutive deltas 9.7/10.0/10.4/11.1/11.4/11.7/12.1 - no wobble anywhere. BENJI'S CALL: HIT.
+FORCES: RMSE 0.051/0.051/0.050/0.051/0.048/0.048/0.048/0.052/0.047 - flat, stable, noisier than energy but not jagged. BENJI'S CALL: HIT.
+LOCALIZATION: BENJI'S CALL MISS, and the miss is the finding. Worst atoms are NOT at the defect. They are LEAD, in symmetry-equivalent pairs: atoms 1 and 5 both exactly 0.1982; atoms 3, 7, 8 all exactly 0.1440. Identical to 4 decimals = symmetry-equivalent = systematic, not noise. Worst/median = 6.1x. BENJI'S SECOND SAFEGUARD (per-atom localization) caught exactly what he built it to catch: a clean aggregate hiding one atom TYPE going wrong.
+=> REFRAME: this is not a defect problem or a strain problem. MACE-MP HAS A SYSTEMATIC ERROR ON Pb. Physically sensible - Pb is heavy, relativistic bonding, and lead halides are a thin slice of Materials Project training data. Every barrier that moves iodine past lead inherits it.
+THE MECHANISM, VISIBLE: strain energy cost - GPAW 0.093 eV, MACE 0.179 eV over 2%. MACE thinks stretching this lattice costs NEARLY TWICE what it does. Error grows linearly at ~43 meV per 1% strain. That is NOT softening (Deng 2025 predicts underpredicted curvature) - it is the model being TOO STIFF. Which explains the too-tall barriers, AND why the error shrank under tension: we were partially unwinding a stiffness error.
+DECISION RULE FIRES: smooth energy + smooth forces -> PROCEED to the 4-point barrier sweep (0, 0.67, 1.33, 2.0%). Phase 3's second and final experiment. Then Phase 3 closes per the exit criterion.
+
+## PHASE 3 FINAL EXPERIMENT (Jul 18): 4-point barrier sweep, 0 / 0.67 / 1.33 / 2.0% tension
+Have: 0% (GPAW 0.108, MACE 0.152, +41%) and 2% (GPAW 0.092, MACE 0.112, +21%). Computing the two middle points.
+PRE-REGISTERED BLIND: Mentor - lands close to linear (~34% at 0.67%, ~27% at 1.33%), within a few points, because the underlying stiffness error is linear in strain (43 meV/1%) and a barrier is just an energy difference. Benji - MIGHT DEVIATE.
+Note the asymmetry of the calls: mentor predicts no structure, Benji allows for structure. A deviation vindicates Benji and says barriers do NOT simply inherit the static energy error.
+
+## PHASE 3 FINAL RESULT - 4-point barrier sweep (Jul 18). BENJI WINS.
+| strain | GPAW | MACE | error |
+| 0%     | 0.108 | 0.152 | +41% |
+| 0.67%  | 0.107 | 0.141 | +37% |
+| 1.33%  | 0.094 | 0.130 | +38% |
+| 2.0%   | 0.092 | 0.112 | +21% |
+BETS: Mentor "close to linear, ~34%/~27%" = MISS. Benji "might deviate" = HIT. Error is FLAT ~40% from 0 to 1.33%, then CLIFFS to 21%. Not linear. Benji now 5-for-7, won the two hardest calls of the week.
+THE DEEPER FINDING: the two engines disagree on the SHAPE of strain response, not just amplitude. MACE barrier drops smoothly (0.152/0.141/0.130/0.112); GPAW holds then drops (0.108/0.107/0.094/0.092). This is a real disagreement about the PHYSICS of how strain affects migration, not a scaling error. The static-energy stiffness error (linear, 43 meV/1%) does NOT simply propagate to barriers - barriers are more complex than the energy gate suggested.
+CAVEAT: single points on MACE 4-image-resolution paths near the peak; 1.33% GPAW barrier (0.094) sits close to 2% (0.092) - could be a real plateau or image 5 not being the exact GPAW saddle at that strain. Direction (non-constant error, shape disagreement) solid; exact plateau needs finer paths.
+
+## POST-PHASE-3: "a little of both" (Jul 18, Benji's call)
+Track 1: write-up skeleton (mentor drafting, no compute). Track 2: bromine substitution test (compute). They share a foundation - Track 2's result IS Track 1's second data point.
+Bromine test question: does MACE's ~40% barrier overprediction hold for CsPbBr3 (different halide, smaller anion, well-studied)? If yes, the error is Pb-driven and chemistry-general -> ranking survives across halides -> screen is viable. If no, the mechanism is misunderstood.
+PRE-REGISTERED BLIND: both ~40% again, same direction (error is about Pb, which Br does not change; not about iodine specifically).
+
+## BROMINE TEST SCORED (Jul 18) - BOTH MISS, mechanism overturned
+CsPbBr3: GPAW 0.126, MACE 0.139, overprediction 10.6%. CsPbI3 was +41%. Same Pb, same structure, only I->Br: error drops 4x.
+BETS: both ~40% same direction. BOTH MISS badly.
+MECHANISM OVERTURNED: the error is NOT Pb-driven/chemistry-general (our shared hypothesis). It is HALIDE-SPECIFIC. Iodine +41%, bromine +11%. Whatever MACE mismodels, it is about IODINE - heavy, polarizable, relativistic - not lead. The Pb-localization in the strain gate was the symptom's LOCATION (the Pb-I bond) not the cause (the iodine side of it). Br bonds the same Pb and the error nearly vanishes.
+CONSEQUENCE FOR SCREENING (decisive, points to caution): error is 4x different between two halides -> ranking iodide-rich vs bromide-rich compositions with raw MACE compares barriers with wildly different error bars. Composition A could outrank B purely for having more Br. UNCORRECTED MACE CANNOT SAFELY RANK ACROSS HALIDE COMPOSITIONS. The audit answered its own question.
+CONSEQUENCE FOR THE PAPER (stronger story): "MLIP barrier error is halide-specific - 41% iodide, 11% bromide - because the model mismodels heavy-anion bonding" is a mechanism + warning + testable prediction, not just a number. Tells the field WHERE the problem lives.
+TABLE: CsPbI3 GPAW 0.108 / MACE 0.152 (+41%) | CsPbBr3 GPAW 0.126 / MACE 0.139 (+11%). Note: Br barrier HIGHER than I (0.126 vs 0.108) - chemically sensible, Br smaller and more tightly bound.
