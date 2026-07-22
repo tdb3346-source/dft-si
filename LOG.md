@@ -405,3 +405,8 @@ FIRST PASS - P4 TOOL 1 GENUINELY DONE (Jul 21). Descriptor = relaxed lattice con
 THE CHECKER NOW DISCRIMINATES (not just rejects): barrier FAIL (ill-posed), phase-stability FAIL (MACE unfit), lattice-constant PASS (MACE trustworthy). A verifier that says both "no this lies" and "yes this is trustworthy" = working verifier, not skeptic. Tool 1 acceptance test MET: fails the barrier at Check 1, passes a valid descriptor. 
 USABLE MAP PRODUCED: checker tells you WHERE MACE is trustworthy (structural/geometric, ~2% + correct order) vs unfit (CsPbI3 energetics, sign-wrong). That map is the deliverable.
 P4 STATUS: Tool 1 (Descriptor-Validity Checker) COMPLETE per BELL_LABS_V1_TOOLKIT spec. Next per spec: Tool 2 (Model-Fidelity Auditor).
+TOOL 2 (Model-Fidelity Auditor) CORE BUILT & PASSES ACCEPTANCE TEST (Jul 21). Reports: MAE, Kendall tau (ranking), alpha (scale error), residual (direction error), verdict.
+- Halide barriers: tau -1.00 INVERTED-FAIL, alpha 0.862 (14% scale) + 34% direction -> "cannot screen." Auto-caught the ranking inversion that took manual reasoning before.
+- Group-IV lattice: tau +1.00 PASS, alpha 1.014 (1.4% scale) + 0.8% direction -> "correctable."
+KEY DIAGNOSIS (the literature-unique part): scale-vs-direction decomposition. Group-IV fails by a clean SCALAR (fixable by rescale/fine-tune); halides fail by DIRECTION (error points wrong way -> ranking inverts -> NOT fine-tunable). That contrast = the fine-tuning trigger logic, computed automatically. "Fine-tunable" vs "fundamentally unfit", quantified.
+ACCEPTANCE TEST MET: halides auto-FAIL (inverted), group-IV auto-PASS with alpha/cosine card. Tool 2 core complete. Remaining per spec: committee-disagreement + PROBE reliability layer (Amendment #1) as enhancement.
