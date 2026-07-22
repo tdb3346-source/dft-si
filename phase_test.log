@@ -1,0 +1,1355 @@
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/e3nn/o3/_wigner.py:10: UserWarning: Environment variable TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD detected, since the`weights_only` argument was not explicitly passed to `torch.load`, forcing weights_only=False.
+  _Jd, _W3j_flat, _W3j_indices = torch.load(os.path.join(os.path.dirname(__file__), 'constants.pt'))
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/mace/calculators/mace.py:226: UserWarning: Environment variable TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD detected, since the`weights_only` argument was not explicitly passed to `torch.load`, forcing weights_only=False.
+  torch.load(f=model_path, map_location=device)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/mace/calculators/mace.py:226: UserWarning: Environment variable TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD detected, since the`weights_only` argument was not explicitly passed to `torch.load`, forcing weights_only=False.
+  torch.load(f=model_path, map_location=device)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.763633053208651e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.7705140475647155e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.7494607725872467e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.7764549750868407e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.728833816879628e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.7481626982041614e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.7638235352582714e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.755084255045817e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.7982880385526073e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.807300577751807e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.895340931637625e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.8731507810237135e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.9069978523834466e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.8988472479209476e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.825228204312369e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.9229517119914716e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.934523837984484e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.992594988303285e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.93910285161056e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.928638998650698e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.9729895723809734e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.9594873448059845e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.905567277388165e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.037716074453449e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.013561022971712e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.0825359759983976e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.077843732765235e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.037909213264017e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.043353806094074e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.08908561616137e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.1071473236691824e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.0754485623021345e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.058890933105721e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.1063848198517526e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.1104396968581625e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.118798185547615e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.1449831522793115e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.163658592231195e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.0501859172845544e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.063875676093485e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.166218626845431e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.108452899540988e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.128889870523769e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.1897517470139357e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2457685603628404e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.198304731170873e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2416016992765493e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.1460038084809267e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.189992971611569e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.160839865812821e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.227161392387052e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.178508912577023e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.226324496543195e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.1646732586532567e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2212942115233523e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.30876448747469e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.300301058544652e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3070609591697084e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2932474734127245e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2599241464295394e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2465143147476755e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.235181815810108e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.283829496338148e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2657336435048064e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.216486522532494e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.246189186786494e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2980110285602933e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.294221462388416e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.252513267465077e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.29602360299702e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2277757895456333e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.277304654308745e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2599713116289187e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2253242417601626e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.335896175584205e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.277650481570417e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.325967173434484e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.249271288581488e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3473933607621953e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.263440073998159e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2898697795974444e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2141489627935593e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.277290924102132e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.271592267125578e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2541579275937885e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.325633266930284e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.281230157127903e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2762557615773833e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2942698692220845e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3473719330249407e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3785956747690213e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.294801051219075e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.327072867118592e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2602342883353837e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.343017997150417e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3212975204297685e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2782735633350073e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.363194989556184e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.27968250976906e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3359249301379024e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.294209321623069e-13
+  return f(*arrays, *other_args, **kwargs)
+cuequivariance or cuequivariance_torch is not available. Cuequivariance acceleration will be disabled.
+Using Materials Project MACE for MACECalculator with /home/buyer/.cache/mace/20231203mace128L1_epoch199model
+Using float64 for MACECalculator, which is slower but more accurate. Recommended for geometry optimization.
+Using Materials Project MACE for MACECalculator with /home/buyer/.cache/mace/20231203mace128L1_epoch199model
+Using float64 for MACECalculator, which is slower but more accurate. Recommended for geometry optimization.
+base: dE(black-yellow) = +88.3 meV/fu   Mon Jul 20 18:12:42 2026
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/mace/calculators/mace.py:226: UserWarning: Environment variable TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD detected, since the`weights_only` argument was not explicitly passed to `torch.load`, forcing weights_only=False.
+  torch.load(f=model_path, map_location=device)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.703815853629139e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.687711794279451e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.686186793724277e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.7101058817407845e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.6612871200013064e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.669126383489234e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.650887978410112e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.6669816784884223e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.6538509817019363e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.6334508693209843e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.646483566499621e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.638063301047236e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.6955371648129013e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.65634150211911e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.681157559927592e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/mace/calculators/mace.py:226: UserWarning: Environment variable TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD detected, since the`weights_only` argument was not explicitly passed to `torch.load`, forcing weights_only=False.
+  torch.load(f=model_path, map_location=device)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.7110134714355006e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.729063446611374e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.78076452792775e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.813639110088245e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.831524105281137e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.7936691826687325e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.7526713686582925e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.773005367191446e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.823002831761581e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.789913250460141e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.8665981678770333e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.7683534661237596e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.874000706508924e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.831175710734986e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.8557968801167967e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.9269101732611265e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.877965951470248e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.9224766820327144e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.94227360551737e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.8873259625937866e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.903072524661925e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.8764735162831354e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.9563617778259176e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.933688777634334e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.936269707858211e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.884322188046506e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.948889602592162e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.931059631433931e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.9595002010437156e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.001075820545156e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.0240676092333803e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.968089659589572e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.987088408523989e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.997953302339232e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.9791357080364983e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.016085647317354e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.0088210196631573e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.032854146858819e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.033518091983729e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.005874592267656e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.065786786504052e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.9801972708455247e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.0822806375063285e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.0981814983694296e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.084653573186424e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.1102580701799417e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.072837567439087e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.0681961057497495e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.107231254216971e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.118507594019929e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.1337748055775593e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.174468557485118e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.1458525889561366e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.0796100283814373e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.156826086565216e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.1911154350372446e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.1722393993974835e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.199165093907178e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2501953276833373e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.1591364442250975e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.222277976839305e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.249898103763544e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2642509100756235e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.1674435761439576e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.18262582121436e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.123532392368274e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.1912123955255404e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2614533432645995e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.218272854872984e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.212865875187285e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.237032616986784e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.1821050049996515e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.262027904021739e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.1966352476437943e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.199061662639631e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.118053908191915e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.259562194853185e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.1670409769075386e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.226310140951807e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2198274576668443e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.171267045773666e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.271581197239914e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2305170968391217e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.204095079789541e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.1381135191971603e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.1973301274893236e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2156344690095876e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2360400440377987e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.1645987691538364e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2318453060443186e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2200157013589925e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.1501720150960503e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.178429288524872e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.1398929302443543e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.1733524212243694e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.211891213537469e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.1405528385151673e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.19828000879584e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.1134834689823955e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.223338768873957e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.169014661146521e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.1810844517947907e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.186252295653012e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.1969881327767596e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2001919284289985e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.1641568759215356e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2504595585041265e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2052541327075363e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2311446137904887e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.159728788377328e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2674917501472413e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2031243462030744e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.285741408104134e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.1498214121033253e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.1782619873208595e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.165852049639783e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.1871689302767e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.168984390814137e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.130524337448667e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.24095343030466e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2435418764234854e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2209055614704263e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2813309167147456e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.273164540522888e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.19349820531174e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.259554309522237e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2188850186286415e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.237669059823984e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.240153203800606e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2742348232828715e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3070926333808415e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2918745487156705e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3271248734269965e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2606916037653343e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3211440550580907e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.238106492421125e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.306531820779795e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.266375613861071e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2858107605694675e-13
+  return f(*arrays, *other_args, **kwargs)
+Using Materials Project MACE for MACECalculator with /home/buyer/.cache/mace/20231203mace128L1_epoch199model
+Using float64 for MACECalculator, which is slower but more accurate. Recommended for geometry optimization.
+Using Materials Project MACE for MACECalculator with /home/buyer/.cache/mace/20231203mace128L1_epoch199model
+Using float64 for MACECalculator, which is slower but more accurate. Recommended for geometry optimization.
+br: dE(black-yellow) = +125.3 meV/fu   Mon Jul 20 18:13:46 2026
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/mace/calculators/mace.py:226: UserWarning: Environment variable TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD detected, since the`weights_only` argument was not explicitly passed to `torch.load`, forcing weights_only=False.
+  torch.load(f=model_path, map_location=device)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.7428019974578356e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/mace/calculators/mace.py:226: UserWarning: Environment variable TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD detected, since the`weights_only` argument was not explicitly passed to `torch.load`, forcing weights_only=False.
+  torch.load(f=model_path, map_location=device)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.741351679502503e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.740942772598846e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.747824680658211e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.7388176852698986e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.7572278741488376e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.7570382328689644e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.8044856127643085e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.787618791066516e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.8081929475005046e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.775707695134238e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.8442442478347264e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.8570131581810587e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.853527379344008e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.863389565395341e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.8876771570367024e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.960075785652437e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.9233222073107964e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.931872195248195e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.9128983296833763e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.977547174446838e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.975010849532632e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.9915053612219336e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.9571653346999705e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.027685872416044e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.0706567655002923e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.003575041076516e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.093872760895946e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.1002526057364856e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.0488881647522015e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.049337617474443e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.0249043047082227e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.097826936983469e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.093956094527516e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.036636414628099e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.0750864516942986e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.0994591908415656e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.1401020536687363e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.062637816543129e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.107666595438115e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.079734346369834e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.146823104551668e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.158791761230089e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.1047263750189377e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.065235844817208e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.155810161118276e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.177174117081103e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.252022651353253e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.175293202992218e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.1812657231660445e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2058469873990835e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.17335838817897e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.217366300042913e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.229266118375197e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.185854271039067e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2420697871766603e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.277842722300952e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.1950898544260056e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2916419702146346e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2510464113456083e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2556650772964663e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2034697174967937e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.235472741323616e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.270783487314416e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.327319967742857e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.268997719511857e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3099439454992384e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2796753906073e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.369437177446961e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3029967019848915e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2972420667047593e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2310805855644396e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.282403088391638e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2722954538545007e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.280667006636264e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3530631885595784e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2856606104928513e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.294887677556228e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3431032524390383e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2436976899110465e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3189487832097496e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.304640772159199e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.337298605727513e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.319936703337661e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.279971409958489e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3391575534980573e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3228082540195237e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2692295151250113e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.412382941721442e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.364155533807468e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.335399939493022e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.344723295816769e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.325262286615336e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.317154131865114e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3493675862168866e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.383456479640462e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3987662985907297e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3648312706944886e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3709522534136394e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.372073824245231e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3304981088635376e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3837859368759407e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3262884482364475e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.334559303250751e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3247594217938884e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.412980885990008e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.398969449283425e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3197255328702285e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3635257243895724e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3276741600781744e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.397624319212292e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3701791161573526e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3516591157322504e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.349484552876649e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.4414445874084715e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.357844054761566e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3221126032394623e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3982165347638016e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.417128199690138e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.402971394061178e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.4707089197017426e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.387107179474762e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.396960537982059e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3608820531157956e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3888974670663e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3784426336302674e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.4367610622405284e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3973753863648413e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.4126835335449645e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.4237652594903376e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.4113000069980977e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.4405660087020305e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.4209075977102973e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.316084398808467e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3563071263091826e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.395050273060941e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.340439616866817e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.410887490959451e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.403804435629771e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.450810323160393e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.40206773379315e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.390686559343231e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.4412980548199946e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.4439345206930684e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.4195398218022897e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.347992822883835e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3922196613908747e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.4244091564104907e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.446233096029213e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3778481783948276e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3708621581858643e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3252768510409526e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.343423921033854e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.344017738204975e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.369881397250673e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.349134542695502e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.357636643814873e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.372477702313396e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.301692191511187e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.325565550846354e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.279179356835241e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3043811121641706e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3107719515263547e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.352992502031438e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3777828693411927e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.315196801047419e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2898319143521246e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.310138775033608e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2924419661303953e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.288055128706554e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.337274199889148e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2921595497239064e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3019690393156655e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.275025107653279e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.313179121714514e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3279393592927685e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2904471417138126e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.36375645418944e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2815710388943134e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2918850016027384e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.326909076034442e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.258073360179034e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3065949096466976e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3122660049242737e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.27788763785272e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2747977696447404e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.268577557699705e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.313574696729984e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2280642978272586e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3406171785297147e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.347923261839198e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.296567762386394e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2805272585123373e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2639545245933696e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2817235381861205e-13
+  return f(*arrays, *other_args, **kwargs)
+Using Materials Project MACE for MACECalculator with /home/buyer/.cache/mace/20231203mace128L1_epoch199model
+Using float64 for MACECalculator, which is slower but more accurate. Recommended for geometry optimization.
+Using Materials Project MACE for MACECalculator with /home/buyer/.cache/mace/20231203mace128L1_epoch199model
+Using float64 for MACECalculator, which is slower but more accurate. Recommended for geometry optimization.
+rb: dE(black-yellow) = +166.8 meV/fu   Mon Jul 20 18:15:05 2026
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/mace/calculators/mace.py:226: UserWarning: Environment variable TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD detected, since the`weights_only` argument was not explicitly passed to `torch.load`, forcing weights_only=False.
+  torch.load(f=model_path, map_location=device)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.729128527364284e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/mace/calculators/mace.py:226: UserWarning: Environment variable TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD detected, since the`weights_only` argument was not explicitly passed to `torch.load`, forcing weights_only=False.
+  torch.load(f=model_path, map_location=device)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.7450745500733067e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.769259068264582e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.7031866129496813e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.7599799109041797e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.757104834483643e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.7080565697155974e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.7314287744156093e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.7863996857206296e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.8044459448418907e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.8299870032444565e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.851550975797259e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.805297747825735e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.887980140436432e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.9112185424951553e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.868778842193088e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.924299312649502e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.9330440451764307e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.9749640819191603e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.8914735249397395e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.942969110138231e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.942987847905249e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.983009111067013e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.941903024818549e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.0321475079495515e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.0360308299855076e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.053791671987773e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.0642322204668083e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 2.995760894895172e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.007343622051291e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.1046801729245304e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.01822982000774e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.1069499027882947e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.058826936929217e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.034987079395192e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.0628467070511065e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.111071809938001e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.1002313810156954e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.1377652337715354e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.1113834265190464e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.1152452267836525e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.0591925751271564e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.1192104084596405e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.1088347420936586e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.122011392544446e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.10821800647836e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.228243299573352e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.1456364708596575e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.1944282494945713e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.1913619345875277e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.18398776202643e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2049870466299276e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.1476829604707713e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.170582336661458e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2521203875866486e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2788855203913203e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.265441921583732e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.253685605298327e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.1580910138942006e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.262300650636017e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.171669364365593e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.227024507398516e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.1933911333602734e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.231000128447506e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.233210035708264e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.225090425691939e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2852975616872393e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3003936552766654e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2971052462474204e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2789263649647036e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.343402129173725e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2766741022528363e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.310578031438745e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.37261641042733e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.259006110739006e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3671419132846893e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2572516027915193e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3164062495141253e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.322541868309891e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2862398211350547e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3535294056641276e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3876583053017525e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.344391443242999e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3714366867971445e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3014858775978424e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3457888762968266e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.311210145447672e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.312611126957768e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.344071956426999e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.365967062050852e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.393119926104824e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.385876550233293e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3182606220342456e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.304712859367009e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.343291657257457e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.321035967880445e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2619114903068847e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.337865238892675e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.421373306344185e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.387669739232552e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.4486609557229105e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.327489372530235e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3380935812161276e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.350687555923952e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2615297143149405e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3828865283430543e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3395773267372155e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3491090998370376e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.337984529809291e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.4125268238128497e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3703443645005407e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3097638939084537e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.400284599947776e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.35054058959999e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.401685013667989e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.4365603494223436e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.398208543511826e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3837338859931626e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.39399471415047e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3745622471052834e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.386949522994035e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3946794286767237e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.357855863375243e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3756196295977055e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3413263995512675e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.366245823618449e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.42153048141317e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.343111871246255e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.371986118449545e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3580090177274267e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.364050854090107e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.391392910927357e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3377228801454745e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.434122514783631e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.345867007775774e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3084518115018746e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.357423854276118e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3438330918305777e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.347232556174857e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3009781216766764e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3684944529595604e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.41747969685341e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.373112482171102e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3344433114993e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3465232686434416e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.4579624580637777e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.400946869919743e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.390947726793235e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.304442430934284e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3278322213605446e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.364993926934378e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.349630906544921e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3105120253282575e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.4127158596264644e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3626415277669193e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.4006491646761596e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3195308731712087e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3402367592862285e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.311150008651048e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3096772015845043e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.363287146323727e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.31924297889951e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.326128586747326e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.293242749846398e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.236891721424547e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3275003908567574e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3378547286552697e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3226487911111064e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3105305662915254e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.310626660986616e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.338312946544915e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.3248619236982537e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.341446396744164e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.303355360335874e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2642794364567475e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2793932571428033e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.217435975319027e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.31630755185292e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2484436992424397e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.384402173961996e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.349180020675548e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.29000598293679e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2581306118260163e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.298308745324729e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.28100937064792e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2973810097768854e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.266049236046071e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2572898302987193e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2712965783860283e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.278842450431002e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.312074431836378e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2885345523060454e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2560636694711026e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.271658066723019e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2376602057677716e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.232381080723248e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.268459166629682e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2896871044740833e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2031959936111113e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.224934073989144e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.2752081240704686e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.21109498077812e-13
+  return f(*arrays, *other_args, **kwargs)
+/home/buyer/miniconda3/envs/mace/lib/python3.11/site-packages/scipy/_lib/_util.py:1181: RuntimeWarning: logm result may be inaccurate, approximate err = 3.249504301553599e-13
+  return f(*arrays, *other_args, **kwargs)
+Using Materials Project MACE for MACECalculator with /home/buyer/.cache/mace/20231203mace128L1_epoch199model
+Using float64 for MACECalculator, which is slower but more accurate. Recommended for geometry optimization.
+Using Materials Project MACE for MACECalculator with /home/buyer/.cache/mace/20231203mace128L1_epoch199model
+Using float64 for MACECalculator, which is slower but more accurate. Recommended for geometry optimization.
+k: dE(black-yellow) = +198.7 meV/fu   Mon Jul 20 18:16:26 2026
+
+RANKING (more negative = black more stable = better):
+  base    +88.3 meV/fu
+  br     +125.3 meV/fu
+  rb     +166.8 meV/fu
+  k      +198.7 meV/fu
+
+SPREAD = 110.3 meV/fu
+(<10 = does NOT discriminate; >20 = discriminates, descriptor usable)
+NOTE: yellow phase is APPROXIMATED (same recipe all 4) - this is a SCREEN-VALIDITY test, not final numbers

@@ -1,0 +1,5 @@
+Cl image 0: E = -136.4666 eV
+Cl image 5: E = -136.2788 eV
+CsPbCl3 GPAW BARRIER = 0.188 eV
+CsPbCl3 MACE = 0.108 eV -> overpredicts by -42.5 percent
+TREND: CsPbI3 +41% | CsPbBr3 +11% | CsPbCl3 = ?

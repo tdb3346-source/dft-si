@@ -302,3 +302,96 @@ MECHANISM OVERTURNED: the error is NOT Pb-driven/chemistry-general (our shared h
 CONSEQUENCE FOR SCREENING (decisive, points to caution): error is 4x different between two halides -> ranking iodide-rich vs bromide-rich compositions with raw MACE compares barriers with wildly different error bars. Composition A could outrank B purely for having more Br. UNCORRECTED MACE CANNOT SAFELY RANK ACROSS HALIDE COMPOSITIONS. The audit answered its own question.
 CONSEQUENCE FOR THE PAPER (stronger story): "MLIP barrier error is halide-specific - 41% iodide, 11% bromide - because the model mismodels heavy-anion bonding" is a mechanism + warning + testable prediction, not just a number. Tells the field WHERE the problem lives.
 TABLE: CsPbI3 GPAW 0.108 / MACE 0.152 (+41%) | CsPbBr3 GPAW 0.126 / MACE 0.139 (+11%). Note: Br barrier HIGHER than I (0.126 vs 0.108) - chemically sensible, Br smaller and more tightly bound.
+
+## CHLORIDE TEST (Jul 18) - third halide, completes the trend
+Question: does MACE's CsPbCl3 barrier error fall below bromide's 11%, making Cl < Br < I? Tests whether the error tracks heavy-anion polarizability (Cl lightest/least polarizable -> should be most accurate).
+PRE-REGISTERED BLIND: both below 11%. Mentor 5-10%. If Cl comes in ABOVE Br, the heavy-anion mechanism breaks.
+
+## OVERNIGHT VERIFICATION QUEUE (Jul 18) - re-ground the halide series on GPAW's OWN paths
+Problem: all three barriers (I 0.108, Br 0.126, Cl 0.188) are GPAW single-points on MACE-CHOSEN paths. If MACE picks bad paths (and it is worst at Cl), the sign reversal could be partly artifact. Fix: independent GPAW NEB for each halide.
+Queue (sequential, one job, ~8h): Cl NEB, then Br NEB, then I NEB. Each capped at 40 steps, trajectory saved continuously (catch #18 lesson).
+PRE-REGISTERED BLIND: sign reversal HOLDS. Mentor: Cl own-path barrier ~0.16-0.19 (may be below 0.188 but stays high; Cl genuinely tightly bound). Benji: holds.
+If Cl own-path drops toward MACE's 0.108, the reversal WEAKENS to "error shrinks toward zero" - a different, milder paper. This run decides which paper we have.
+
+## SIGN REVERSAL KILLED (Jul 19) - it was a path artifact. Verification worked.
+Overnight plan (3 sequential GPAW NEBs) FAILED on runtime: one Cl NEB ran 11 hours, reached step 16 of 40, ~40 min/step, thrashing (fmax 0.13-0.51, not converging). Br and I never started. Mentor runtime estimate wrong again; full GPAW NEBs are UNTENABLE for this material.
+BUT the partial Cl trajectory (saved continuously, catch #18) gives the answer: Cl GPAW-OWN-PATH barrier = 0.088 eV (unconverged, 16 steps), NOT the 0.188 from single-point-on-MACE-path. The MACE-chosen path INFLATED the DFT barrier >2x.
+=> THE SIGN REVERSAL WAS AN ARTIFACT. Confirmed the exact caveat flagged at logging time. Grading GPAW on MACE's poorly-chosen Cl path manufactured the "-43% underprediction."
+REAL SERIES (provisional): I GPAW 0.108 / MACE 0.152 (+41%); Br GPAW ~0.126 / MACE 0.139 (+11%); Cl GPAW ~0.088 / MACE 0.108 (~+20%). MACE OVERPREDICTS across all three. Error varies ~20-40% but NEVER reverses sign. The milder, honest paper.
+METHOD CATCH (#26, the important one): single-point-on-MACE-path grades GPAW on geometries MACE chose, and MACE chooses worse paths for some halides than others - this partially manufactured a false result. Before ANY halide comparison is publishable, each barrier needs a path GPAW agrees with. Full GPAW NEB too slow; fix = higher-image MACE NEB (11 not 7) that GPAW grades, plus check GPAW forces along MACE's path are small.
+CAVEAT ON THE CAVEAT: Cl partial path shows DEEP wells (-0.20) - softer than expected for tightly-bound Cl. The path may still be imperfect. 0.088 is provisional.
+LESSON: we killed a bombshell before publishing it because we verified. This is the whole point of the discipline. A referee would have found the path artifact; we found it first.
+
+## ============================================================
+## THE RANKING TEST (Jul 19) - can the oracle screen compositions at all?
+## ============================================================
+## Rule #1 experiment: not more audit - the test that decides if invention is POSSIBLE with this tool.
+## Question: does MACE's RANKING of makeable CsPbI3 modifications match DFT's ranking? (Order, not absolute values - a screen only needs order.)
+## Candidate set (all makeable, from the patent landscape): pure CsPbI3 baseline | Br-substituted | Rb A-site swap | FA A-site swap. Ranking metric: iodide vacancy migration barrier (the quantity we can compute fast; a NECESSARY condition - if the tool cannot rank barriers it cannot rank the harder phase-stability question).
+## PRE-REGISTERED BLIND, BOTH AGREE: ranking FAILS - MACE misorders. Reason: the heavy-anion/halide error that flipped the pure-halide ordering (DFT Cl>Br>I, MACE reversed) will flip the mixed candidates too.
+## DECISION: ranking survives -> we have a screen, greenlight the Edison phase (thousands of candidates, DFT-stamp top few). Ranking fails -> raw MACE cannot screen, the fast-screen plan is DEAD, and the oracle-fix path (fine-tune / direct-DFT small sets) is EARNED with proof not assumption. No wasted outcome.
+## ============================================================
+
+## RANKING TEST RESULT (Jul 19) - THE DESCRIPTOR IS ILL-POSED. Decisive.
+base (pure CsPbI3, all sites equivalent): MACE barrier 0.151 eV, endpoint diff 0.000 - clean.
+br (25% Br): endpoint gate FAIL, diff -0.244. rb (25% Rb): FAIL -0.233. k (25% K): FAIL +0.117.
+ALL THREE substitutions break endpoint equivalence. Not bugs - CHEMISTRY. Substitution destroys the site symmetry that makes a vacancy hop well-defined. In a pure crystal every hop is between equivalent sites; mix in another element and the two ends are inequivalent, so there is NO single barrier - there is a distribution, one per local environment, and which you compute is an artifact of site choice.
+BOTH PREDICTED "MACE misorders." REALITY IS DEEPER: the ranking question is ILL-POSED. You cannot rank compositions by single-vacancy barrier because mixed compositions do not HAVE a single barrier.
+RULE #1 VERDICT (stated plainly): the migration-barrier-screening approach to inventing a stabilizer is DEAD. Not "needs a better oracle" - the DESCRIPTOR does not survive the substitutions that make a composition worth screening. Fine-tuning MACE would NOT fix this: the problem is not accuracy, it is that "the barrier" stops being a single number when you mix elements. This kills fork (a), fork (c), and the Phase 2 fine-tuning justification simultaneously.
+WHAT A GOOD VERIFIER IS FOR: it told us the approach cannot work BEFORE we burned 6000 filaments on it. That is the entire value of building the verifier first. Two weeks -> "this descriptor cannot screen for this invention" is a real, saved-us-months answer.
+IMPLICATION FOR INVENTION: need a descriptor that (1) is well-defined for MIXED compositions and (2) connects to the black-to-yellow rot. Single-vacancy barrier is neither robustly. Candidates: phase-stability energy difference (black vs yellow) - well-defined for any composition, directly the failure mode - but expensive. THIS is the real next question.
+
+## ============================================================
+## SCORECARD RE-ANCHOR (Jul 19) - what P4-P7 are actually FOR
+## ============================================================
+## THE GOAL (Benji, stated clearly): build discovery TOOLS that move materials science ~10 years ahead - 100x work, methods nobody built. Solar/perovskite is the PROVING GROUND and the mission domain, NOT the deliverable.
+## THE TOOL, two layers, in order: (1) a TRUST/VERIFICATION layer that catches lies in computational screening - which approaches/descriptors/models to believe. (2) a GENERATION engine that proposes candidates. BUILD (1) FIRST - a generator without a verifier is confident garbage at scale (proven this afternoon: every reach for combination-mixing/6000-iterations/autoresearch failed the "where is the verifier" test).
+## P4-P7 ARE THIS, correctly: P4 = build the verifier/oracle layer. P5 = calibration at scale. P6 = transfer test (new material). P7 = verifier + generator loop. The architecture is INTACT.
+## THE SLIP TO CORRECT: grading progress by "did we invent a material" instead of "did we build verification capability." Under the RIGHT scorecard, 2 weeks produced P4's actual deliverable: a working verifier that already caught TWO real failures - (a) MACE misranks halide barriers, (b) single-vacancy barrier is ILL-POSED for mixed compositions. Both are outputs of the tool WORKING.
+## P4 DELIVERABLE (corrected): not "a stabilized perovskite" but "a verification tool that says which screening approaches to trust, demonstrated on perovskites." The ranking test IS the tool's first output: fed a proposed descriptor, returned 'ill-posed, reject.'
+## NEXT: stop hunting the material. Build the verifier as an actual TOOL (generalize the manual predict/gate/DFT-stamp/descriptor-validity checks into something reusable). First real capability to formalize: the DESCRIPTOR-VALIDITY CHECKER - before screening N compositions on descriptor X, test whether X is well-posed and whether the fast model ranks it. We just ran it by hand and it worked.
+## ============================================================
+RULE (Jul 20, after 3 failed overnight GPAW-NEB runs): GPAW NEBs are BANNED from unattended/overnight jobs - they thrash 40+min/step on this soft lattice and never converge in a night (chloride 11h/step16; iodide 11h/still-on-iter-1, partial barrier 0.238 inflated and still dropping). Unattended jobs use ONLY: MACE (minutes) or GPAW SINGLE-POINTS (10min each, batchable, always finish). Referee barriers = GPAW single-points on MACE's converged path, never GPAW's own NEB. Mentor failure: kept choosing a job type that cannot finish; 3 nights lost.
+
+## REFEREE IODIDE BARRIER - SETTLED (Jul 20)
+Full 11-point GPAW single-points on MACE's converged path: [0, -0.096, -0.175, -0.083, +0.058, +0.108, +0.056, -0.096, -0.173, -0.117, -0.005]. Clean symmetric W, peak image 5.
+REFEREE IODIDE VACANCY BARRIER = 0.108 eV. Confirms the earlier 4-point value exactly, now at full resolution.
+METHOD VINDICATED: GPAW single-points on MACE's path FINISH (survived a terminal crash mid-run - recomputed only missing images from saved energies). GPAW's own NEB never converged in 3 overnight attempts. Single-points, batched, resumable = the only viable referee method on this soft lattice.
+STANDING FACTS NOW FIRM: iodide GPAW 0.108 / MACE 0.152 = +41%. Br GPAW ~0.126 / MACE 0.139 = +11%. Cl own-path ~0.088 (partial) / MACE 0.108. MACE overpredicts, halide-dependent, no sign reversal.
+
+## PHASE-STABILITY DESCRIPTOR TEST (Jul 20) - discriminates, but on the WRONG axis. Checker catch.
+MACE dE(black-yellow) meV/fu: base +88.3, br +125.3, rb +166.8, k +198.7. Spread 110 (>20 threshold - "discriminates").
+BUT: (1) SIGN backwards - all positive = yellow more stable than black for ALL, including pure CsPbI3 which has a working metastable black phase. Physically suspect. (2) RANKING tracks substitution DISRUPTION exactly (base<br<rb<k = smallest to biggest lattice mismatch; K is too small for A-site, distorts most). Not "K resists rot best" - "K wrecks geometry most, and the approximated yellow phase responds to that."
+VERDICT: descriptor passes check-1 (well-posed) and check-3 (discriminates) but FAILS the hidden check - discriminates on the WRONG axis (disruption, not phase stability). A screen using this would rank K as best stabilizer = BACKWARDS (K destabilizes CsPbI3 in reality). Confidently wrong, like MACE's halide ordering.
+ROOT CAUSE: yellow phase APPROXIMATED with same crude recipe for all 4 (logged as caveat before the run). The approximation, not the physics, drives the ranking.
+CHECKER LESSON (more subtle than the barrier catch): a descriptor can be well-posed AND discriminate AND still be useless if it discriminates on the wrong axis. Spread > threshold is necessary, NOT sufficient. The checker needs a 4th check: is the discrimination axis the INTENDED one? (requires either a physical sanity anchor or DFT spot-check of the ranking.)
+STATUS: phase stability with a proper delta-phase structure MIGHT be usable - unknown, needs real work. With this approximation it is NOT. Descriptor NOT yet certified.
+
+## ============================================================
+## CONSTITUTION RULE #2 (Jul 20) - BUILD GENERAL IN-HOUSE VERIFIER TOOLS
+## ============================================================
+## The #2 goal (serving #1, invention) is to build GENERAL, REUSABLE in-house VERIFIER tools -
+## not one-off scripts for one material or one descriptor. A tool that checks only one thing is a
+## script; a tool that checks ANY thing you plug into it is a verifier. Build the general version.
+##
+## WHY GENERAL, NOT HARDCODED: the goal is a capability that makes FUTURE work 100x faster.
+## A checker hardcoded for phase-stability validates phase-stability once. A general checker -
+## one that takes any descriptor as a plug-in and runs its gates blind to what the descriptor
+## computes - validates EVERY future descriptor as a tool call instead of a two-week manual analysis.
+## That generality IS the 10-years-ahead leverage. Hardcoding it away to save time today is
+## borrowing against the whole point.
+##
+## THE PATTERN, permanent: when building a tool, ask "does this generalize, or am I solving
+## exactly one instance?" One instance = a script, acceptable only as a throwaway. The DELIVERABLE
+## is always the general tool. This is how an in-house toolkit accumulates instead of resetting.
+##
+## FIRST INSTANCE: the descriptor-validity checker. Takes (descriptor_fn, compositions) -> verdict.
+## Blind to what descriptor_fn computes. Runs: Check 0 (are the structures real?), Check 1
+## (well-posed?), Check 3 (discriminates?), Check 2+4 merged (survives DFT oracle spot-checks on
+## extremes + suspicious point, reports coverage honestly). Two cheap gates, one expensive truth-test.
+##
+## THIS CONSTITUTION IS BEING BUILT FOR REUSE: rules logged here are meant to persist across
+## projects and sessions. Rule #1 = be the ruthless mentor, invention is the goal, tools serve it,
+## kill the audit tar pit. Rule #2 = build general reusable verifier tools, not one-off scripts.
+## ============================================================
+CHECK 1 IMPLEMENTED & RUN LIVE (Jul 21): base diff 0.000 (clean), k -0.043 (marginal), br -0.466, rb -0.857 (broken). 2/4 ill-posed -> FAIL. LESSON: binary threshold is fragile - k squeaked under 0.10 despite being the most disruptive substitution (relaxation-luck, landed near the line). Check 1 must output GRADED well-posedness (clean/marginal/broken) + the diffs, not binary pass/fail. Verdict still FAIL (br/rb clearly broken), but the tool told us its own threshold needs to be a gradient. Real improvement found by running it live.
