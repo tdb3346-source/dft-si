@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "who": "Benji",
+    "question": "barrier direction MACE vs GPAW",
+    "prediction": "lower",
+    "band": "",
+    "timestamp": "2026-07-22T16:57:53",
+    "result": "GPAW 19% lower",
+    "outcome": "HIT"
+  },
+  {
+    "id": 2,
+    "who": "Mentor",
+    "question": "barrier direction",
+    "prediction": "higher >10%",
+    "band": "",
+    "timestamp": "2026-07-22T16:57:53",
+    "result": "GPAW lower",
+    "outcome": "MISS"
+  },
+  {
+    "id": 3,
+    "who": "Benji",
+    "question": "strain error shape",
+    "prediction": "might deviate",
+    "band": "",
+    "timestamp": "2026-07-22T16:57:53",
+    "result": "flat-then-cliff, deviated",
+    "outcome": "HIT"
+  },
+  {
+    "id": 4,
+    "who": "Mentor",
+    "question": "strain error shape",
+    "prediction": "close to linear ~34/27%",
+    "band": "",
+    "timestamp": "2026-07-22T16:57:53",
+    "result": "not linear",
+    "outcome": "MISS"
+  },
+  {
+    "id": 5,
+    "who": "Benji",
+    "question": "chloride error",
+    "prediction": "below 11%",
+    "band": "",
+    "timestamp": "2026-07-22T16:57:53",
+    "result": "sign reversed then killed",
+    "outcome": "MISS"
+  },
+  {
+    "id": 6,
+    "who": "Mentor",
+    "question": "chloride error",
+    "prediction": "5-10%",
+    "band": "",
+    "timestamp": "2026-07-22T16:57:53",
+    "result": "artifact",
+    "outcome": "MISS"
+  }
+]
