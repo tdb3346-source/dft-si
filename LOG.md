@@ -495,3 +495,12 @@ TOOL 5 (Prediction Ledger) BUILT (Jul 21). Register blind predictions (who/quest
 ## would gut Rule #1. The rule is narrow: a kill must be scoped to its evidence.
 ## Parking WITH a stated, falsifiable trigger remains correct and cheap.
 ## ===========================================================
+
+## HANDOFF CORRECTIONS - Jul 24 (supersede P5_HANDOFF sections 5 and 7)
+## - "MACE-MP is UNFIT for CsPbI3 energetics" stands ONLY for the off-the-shelf
+##   foundation model. Says nothing about fine-tuned MACE. See Rule #3.
+## - PyTorch/fine-tuning trigger ("fixable scale-like error") is MIS-SPECIFIED,
+##   written under an un-earned kill. Rewrite before using it to park anything.
+## - P4 Phase 1 (few hundred DFT configs, polymorph set, PBE+SOC) is NOT done.
+##   That is fine-tuning's input. Phase 2 cannot start without it.
+## - Jul 24 EOS result is an INSTRUMENT AUDIT, n=3, not a trust map.
