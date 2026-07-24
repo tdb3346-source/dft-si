@@ -455,3 +455,43 @@ TOOL 5 (Prediction Ledger) BUILT (Jul 21). Register blind predictions (who/quest
 ## not transfer from composition-screening to cross-material auditing.
 ## That instrument limitation is itself a finding; log it as such.
 ## ===========================================================
+
+## ===========================================================
+## CONSTITUTION RULE #3 - Jul 24, 2026
+## SCOPE THE KILL. Do not retire a path on evidence that does not cover it.
+## ===========================================================
+## Rule #1 kills the tar pit (endless auditing, no matter). Rule #3 kills its
+## MIRROR IMAGE: premature closure. Declaring a path dead is CHEAPER and feels
+## more rigorous than testing it, so it is the ruthless mentor's own failure mode.
+##
+## THE TEST, before any "that approach is dead":
+##   State the evidence as a SCOPED sentence: which model, which configuration,
+##   which material, which property, which conditions. Then ask whether the
+##   conclusion is INSIDE that scope. If it is broader, the kill is not earned.
+##
+## RECEIPT (the failure that produced this rule):
+##   Evidence:   MACE-MP OFF-THE-SHELF, on CsPbI3 ENERGETICS, gave barrier +41%,
+##               halide ordering inverted, phase-stability sign wrong.
+##   Conclusion drawn: "MLIPs are unfit here" -> P4 Phase 2 (FINE-TUNING) dead
+##               -> PyTorch parked -> the whole fine-tuned-potential arc retired.
+##   The gap:    Phase 2 fine-tunes on OUR Phase 1 DFT data (polymorphs, strained
+##               cells, rattled snapshots, vacancies) - exactly the configurations
+##               the foundation model never trained on. MACE-MP trains on MP
+##               relaxed structures, which predicts good positions and bad
+##               curvature and bad halide energetics. The direction-error may be
+##               a TRAINING-DISTRIBUTION symptom, not an architecture limit.
+##               That test was never run. The kill was never earned.
+##   Corroborating: Jul 24 EOS run. Bulk modulus failed on Fe (-62.9%) and Si
+##               (-15.9%) but PASSED on C (+2.9%). n=3, one property. "MACE is
+##               unfit for curvature" is already broader than that evidence.
+##
+## CONSEQUENCE: the parked PyTorch/fine-tuning trigger ("fixable, scale-like
+## error, not ordering-inversion") was written under the un-earned kill and is
+## MIS-SPECIFIED. It must be REWRITTEN with reasoning logged - not silently
+## ignored, and not left standing.
+##
+## WHAT THIS RULE IS NOT: it is not "don't skip work that could lead to an
+## invention." That phrasing justifies every survey and every new tool, and
+## would gut Rule #1. The rule is narrow: a kill must be scoped to its evidence.
+## Parking WITH a stated, falsifiable trigger remains correct and cheap.
+## ===========================================================
