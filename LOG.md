@@ -414,3 +414,44 @@ TOOL 3 (Structure Gate) BUILT & PASSES ACCEPTANCE TEST (Jul 21). Pre-flight sani
 TOOL 4 (Run Auditor) BUILT & PASSES ACCEPTANCE TEST (Jul 21). Parses BFGS logs, estimates steps/hours-to-target at current rate, judges vs budget. Tests on real logs: cl_gpawneb (the 11h thrash) -> "12 steps / 7.9h to target" = would have said at hour 11 "needs 8 MORE hours" (19h total for one NEB) - the diagnosis I lacked that night; ob_bfgs -> "0.7h to target" = correctly reads as nearly-done (matched reality: crashed on back-half near completion). KEY: distinguishes SALVAGEABLE (ob, nearly done) from HOPELESS (cl, ~19h total). Empirically CONFIRMS the GPAW-NEB overnight ban rather than just asserting it. Refinement noted: budget should count TOTAL time not remaining.
 ALL FOUR P4 TIER-1 TOOLS BUILT & PASSING ACCEPTANCE TESTS: (1) Descriptor-Validity Checker, (2) Model-Fidelity Auditor, (3) Structure Gate, (4) Run Auditor. THE VERIFICATION LAYER IS COMPLETE. P4 done per BELL_LABS_V1_TOOLKIT Tier 1.
 TOOL 5 (Prediction Ledger) BUILT (Jul 21). Register blind predictions (who/question/prediction/band/timestamp), resolve with HIT/MISS, auto-scorecard per person. Seeded with this month's head-to-heads: Benji 2/3 (67%), Mentor 0/3 (0%). Formalizes the predict-before-run discipline into software - answers "whose call to trust where" with numbers (on CsPbI3 energetics, Benji's read beat mentor's 2-0). Tier 2 bridge tool done. FIVE tools now built: 4 Tier-1 verification + Prediction Ledger.
+
+## ===========================================================
+## PRE-REGISTERED INTERPRETATION - Jul 24, 00:35, BEFORE Fe lands
+## ===========================================================
+## Ledger discipline applied to INTERPRETATION, not just prediction.
+## Written while gpaw_eos_Fe is still running. No peeking, no post-hoc story.
+##
+## RESULTS SO FAR (MACE vs GPAW, same EOS protocol, same strains):
+##   C  (diamond): MACE 446.2  GPAW 433.5   -> +2.9%   PROTOCOL VALIDATED
+##   Si (diamond): MACE  74.5  GPAW  88.6   -> -15.9%  genuine model error
+##   Both had lattice constants within 0.4%. Fe pending. MACE said 71.8.
+##
+## MENTOR PREDICTION (on record): GPAW-Fe = 170-200 GPa.
+##   (C predicted 430-460, landed 433.5 = HIT. Si predicted 88-95,
+##    landed 88.6 = HIT. Fe is the third leg.)
+##
+## READING A - if GPAW-Fe lands ~170-200:
+##   MACE off ~58% on Fe curvature. With Si -16% and C +3%, the claim is:
+##   "MACE-MP bulk-modulus error ranges from negligible to catastrophic across
+##   ordinary elemental solids, UNCORRELATED with its excellent lattice-constant
+##   accuracy on the same systems." Property-indexed (derivative order), not
+##   material-indexed. Anyone screening elastic properties on MACE is exposed.
+##   -> real trust-map result. Finding SURVIVES.
+##
+## READING B - if GPAW-Fe lands ~70-90:
+##   MACE matches the oracle; the -58% was vs EXPERIMENT, meaning PBE itself
+##   fails ferromagnetic Fe (known: PBE underbinds FM Fe). Then the finding is
+##   about DFT, not MACE. Trust-map cell reads "ORACLE UNRELIABLE HERE."
+##   -> still useful, much less novel. Finding WEAKENS to an oracle caveat.
+##
+## READING C - anything else (e.g. 100-160, or unconverged):
+##   Ambiguous. Do NOT force it into A or B. Report the number, mark the cell
+##   UNCERTIFIED, and say plainly that 3 systems is too thin to generalize.
+##
+## STANDING CAVEAT (true under all readings): n=3 systems, one descriptor,
+## one MLIP, one xc functional. This is a probe, not a trust map.
+## Check 3 passed VACUOUSLY on the cross-material grid (spread across 12
+## unrelated elements is trivially large) - Check 3's noise-floor semantics do
+## not transfer from composition-screening to cross-material auditing.
+## That instrument limitation is itself a finding; log it as such.
+## ===========================================================
